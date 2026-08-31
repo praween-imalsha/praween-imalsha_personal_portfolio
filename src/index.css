@@ -1,0 +1,118 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+@layer base {
+  /* Ink-navy theme with warm gold accent (default) */
+  :root {
+    --color-background: 9 15 28; /* #090F1C ink navy */
+    --color-foreground: 236 241 249; /* #ECF1F9 */
+    --color-surface: 17 26 43; /* #111A2B */
+    --color-muted: 27 39 61; /* #1B273D */
+    --color-subtle: 141 158 186; /* #8D9EBA */
+    --color-border: 33 48 74; /* #21304A */
+    --color-accent: 245 179 66; /* #F5B342 warm gold */
+    --color-accent-soft: 253 205 108; /* #FDCD6C */
+    --color-shadow: 0 0 0;
+  }
+  /* Warm paper theme */
+  .light {
+    --color-background: 251 250 246; /* #FBFAF6 */
+    --color-foreground: 16 24 40; /* #101828 */
+    --color-surface: 255 255 255;
+    --color-muted: 242 240 233; /* #F2F0E9 */
+    --color-subtle: 90 100 120; /* #5A6478 */
+    --color-border: 228 225 214; /* #E4E1D6 */
+    --color-accent: 168 105 12; /* #A8690C deep gold */
+    --color-accent-soft: 191 124 22; /* #BF7C16 */
+    --color-shadow: 16 24 40;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  *::selection {
+    @apply bg-accent text-background;
+  }
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient-text {
+    background: linear-gradient(
+      100deg,
+      rgb(var(--color-accent)) 0%,
+      rgb(var(--color-accent-soft)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .grid-bg {
+    background-image: linear-gradient(
+        rgb(var(--color-border) / 0.5) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgb(var(--color-border) / 0.5) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .marquee-mask {
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+}
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee-scroll 32s linear infinite;
+}
+@keyframes caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+.animate-caret {
+  animation: caret-blink 1s steps(1) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-caret {
+    animation: none;
+  }
+}
