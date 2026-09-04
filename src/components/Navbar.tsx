@@ -111,7 +111,15 @@ export function Navbar() {
                 <a
                     href="#"
                     onClick={closeMobileMenu}
-                 className="group flex items-center gap-2 px-6 py-3.5 bg-surface border border-border text-foreground rounded-full font-medium hover:border-accent hover:text-accent transition-colors duration-200"
+                    className="
+                        text-xl
+                        font-serif
+                        font-bold
+                        tracking-tight
+                        text-foreground
+                        z-50
+                        relative
+                    "
                 >
                     Praween
                     <span className="text-accent">.</span>
@@ -201,8 +209,8 @@ export function Navbar() {
 
                     {/* Resume */}
                     <a
-                        href="/public/praween Imalsha (1).pdf"
-                        download="praween Imalsha (1).pdf"
+                        href="/praween%20Imalsha%20%281%29.pdf"
+                        download="Praween-Imalsha-Resume.pdf"
                         className="
                             inline-flex
                             items-center
@@ -327,7 +335,7 @@ export function Navbar() {
 
                             {/* Mobile Resume */}
                             <a
-                                href="/public/praween Imalsha (1).pdf"
+                                href="/praween%20Imalsha%20%281%29.pdf"
                                 download="Praween-Imalsha-Resume.pdf"
                                 onClick={closeMobileMenu}
                                 className="
