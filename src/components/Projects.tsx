@@ -10,7 +10,7 @@ const projects = [
   tech: ['Java', 'Spring Boot', 'MySQL', 'JWT'],
   image:
   'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800',
-  github: '#',
+  github: 'https://github.com/praween-imalsha',
   demo: '#'
 },
 {
@@ -53,7 +53,7 @@ export function Projects() {
             </p>
           </div>
           <a
-            href="#"
+            href="https://github.com/praween-imalsha"
             className="text-accent font-medium hover:underline underline-offset-4 flex items-center gap-2 shrink-0">
             
             View all on GitHub <ExternalLink size={16} />
