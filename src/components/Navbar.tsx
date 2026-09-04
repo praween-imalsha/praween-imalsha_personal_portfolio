@@ -106,7 +106,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="#cv.pdf"
+            href="/public/praween Imalsha (1).pdf"
             download
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-background text-sm font-semibold rounded-full hover:bg-accent-soft transition-colors shadow-glow">
             
