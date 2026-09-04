@@ -179,7 +179,7 @@ export function Hero() {
 
                         {/* Download CV */}
                         <a
-                            href="/cv.pdf"
+                            href="praween Imalsha (1).pdf"
                             download
                             className="group flex items-center gap-2 px-6 py-3.5 bg-surface border border-border text-foreground rounded-full font-medium hover:border-accent transition-colors duration-200"
                         >
