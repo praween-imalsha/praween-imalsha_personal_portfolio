@@ -166,7 +166,7 @@ export function Hero() {
 
                         {/* View Projects */}
                         <a
-                            href="#projects"
+                            href="https://github.com/praween-imalsha"
                             className="group flex items-center gap-2 px-6 py-3.5 bg-accent text-background rounded-full font-semibold hover:bg-accent-soft transition-colors duration-200 shadow-glow"
                         >
                             View Projects
