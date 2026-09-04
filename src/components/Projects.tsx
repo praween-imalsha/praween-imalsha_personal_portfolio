@@ -7,7 +7,7 @@ const projects = [
   description:
   'A full-stack web application featuring a complete shopping experience with secure JWT authentication, dynamic cart, and seamless checkout flow.',
   role: 'Full-stack Developer',
-  tech: ['React', 'Spring Boot', 'MySQL', 'JWT'],
+  tech: ['Java', 'Spring Boot', 'MySQL', 'JWT'],
   image:
   'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800',
   github: '#',
