@@ -176,7 +176,7 @@ export function Hero() {
                             />
                         </a>
 
-                        {/* ================= DOWNLOAD CV ================= */}
+                        {/* Download CV */}
                         <a
                             href="/praween%20Imalsha%20%281%29.pdf"
                             download="Praween-Imalsha-CV.pdf"
@@ -292,60 +292,6 @@ export function Hero() {
                             className="relative h-full w-full object-contain object-bottom drop-shadow-2xl"
                         />
                     </div>
-
-                    {/* Internship Badge */}
-                    <motion.div
-                        initial={{
-                            opacity: 0,
-                            x: -20,
-                        }}
-                        animate={{
-                            opacity: 1,
-                            x: 0,
-                        }}
-                        transition={{
-                            duration: 0.6,
-                            delay: 0.8,
-                        }}
-                        className="absolute -bottom-6 -left-6 bg-surface p-5 rounded-2xl shadow-float border border-border flex items-center gap-4"
-                    >
-                        <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center text-accent font-serif text-2xl">
-                            6
-                        </div>
-
-                        <div>
-                            <p className="text-sm font-bold text-foreground">
-                                Months
-                            </p>
-
-                            <p className="text-xs text-subtle">
-                                UI/UX Internship
-                            </p>
-                        </div>
-                    </motion.div>
-
-                    {/* Open to Work Badge */}
-                    <motion.div
-                        initial={{
-                            opacity: 0,
-                            x: 20,
-                        }}
-                        animate={{
-                            opacity: 1,
-                            x: 0,
-                        }}
-                        transition={{
-                            duration: 0.6,
-                            delay: 1,
-                        }}
-                        className="absolute -top-4 -right-4 bg-accent text-background px-4 py-2 rounded-2xl shadow-glow flex items-center gap-2 rotate-3"
-                    >
-                        <Sparkles size={14} />
-
-                        <span className="text-xs font-bold uppercase tracking-wider">
-                            Open to Work
-                        </span>
-                    </motion.div>
                 </motion.div>
             </div>
         </section>
