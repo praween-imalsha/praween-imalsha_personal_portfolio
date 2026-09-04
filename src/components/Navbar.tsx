@@ -335,7 +335,7 @@ export function Navbar() {
 
                             {/* Mobile Resume */}
                             <a
-                                href="/praween%20Imalsha%20%281%29.pdf"
+                                href="/public/praween Imalsha (1).pdf"
                                 download="Praween-Imalsha-Resume.pdf"
                                 onClick={closeMobileMenu}
                                 className="
