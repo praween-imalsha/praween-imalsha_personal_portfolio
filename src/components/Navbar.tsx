@@ -209,8 +209,8 @@ export function Navbar() {
 
                     {/* Resume */}
                     <a
-                        href="/public/praween Imalsha (1).pdf"
-                        download="praweenImalsha.pdf"
+                        href="praween Imalsha.pdf"
+                        download="praween Imalsha.pdf"
                         className="
                             inline-flex
                             items-center
@@ -335,8 +335,8 @@ export function Navbar() {
 
                             {/* Mobile Resume */}
                             <a
-                                href="/public/praween Imalsha (1).pdf"
-                                download="/public/praween Imalsha (1).pdf"
+                                href="/praween Imalsha.pdf"
+                                download="praween Imalsha.pdf"
                                 onClick={closeMobileMenu}
                                 className="
                                     mt-4
