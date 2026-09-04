@@ -30,7 +30,6 @@ export function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden">
-
             {/* Grid background */}
             <div className="absolute inset-0 grid-bg opacity-40 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_70%)] -z-10" />
 
@@ -40,10 +39,8 @@ export function Hero() {
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent-soft/10 rounded-full blur-3xl -z-10" />
 
             <div className="max-w-6xl mx-auto px-6 md:px-12 w-full grid md:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
-
-                {/* ================= LEFT CONTENT ================= */}
+                {/* LEFT CONTENT */}
                 <div className="flex flex-col items-start">
-
                     {/* Availability Badge */}
                     <motion.div
                         initial={{
@@ -59,10 +56,10 @@ export function Hero() {
                         }}
                         className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface/60 border border-border backdrop-blur-sm text-sm font-medium text-subtle mb-8"
                     >
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-                        </span>
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
+            </span>
 
                         Available for new opportunities
                     </motion.div>
@@ -86,8 +83,8 @@ export function Hero() {
                         Praween <br />
 
                         <span className="italic gradient-text">
-                            Imalsha.
-                        </span>
+              Imalsha.
+            </span>
                     </motion.h1>
 
                     {/* Typing Role */}
@@ -113,7 +110,6 @@ export function Hero() {
 
                         <p className="text-xl md:text-2xl font-medium text-subtle">
                             I'm a{' '}
-
                             <TypingText
                                 words={[
                                     'UI/UX Designer',
@@ -163,10 +159,9 @@ export function Hero() {
                         }}
                         className="flex flex-wrap items-center gap-4"
                     >
-
                         {/* View Projects */}
                         <a
-                            href="https://github.com/praween-imalsha"
+                            href="#projects"
                             className="group flex items-center gap-2 px-6 py-3.5 bg-accent text-background rounded-full font-semibold hover:bg-accent-soft transition-colors duration-200 shadow-glow"
                         >
                             View Projects
@@ -179,7 +174,7 @@ export function Hero() {
 
                         {/* Download CV */}
                         <a
-                            href="praween Imalsha (1).pdf"
+                            href="/public/praween Imalsha  (1).pdf"
                             download
                             className="group flex items-center gap-2 px-6 py-3.5 bg-surface border border-border text-foreground rounded-full font-medium hover:border-accent transition-colors duration-200"
                         >
@@ -203,9 +198,9 @@ export function Hero() {
                         }}
                         className="flex items-center gap-3 mt-10"
                     >
-                        <span className="text-xs uppercase tracking-widest text-subtle/70 mr-2">
-                            Follow
-                        </span>
+            <span className="text-xs uppercase tracking-widest text-subtle/70 mr-2">
+              Follow
+            </span>
 
                         {socials.map((social) => {
                             const Icon = social.icon;
@@ -254,7 +249,7 @@ export function Hero() {
                     </motion.div>
                 </div>
 
-                {/* ================= RIGHT PORTRAIT ================= */}
+                {/* RIGHT PORTRAIT */}
                 <motion.div
                     initial={{
                         opacity: 0,
@@ -271,7 +266,6 @@ export function Hero() {
                     className="relative hidden md:block"
                 >
                     <div className="relative aspect-[4/5]">
-
                         {/* Accent arch */}
                         <div className="absolute inset-x-2 bottom-0 top-6 rounded-t-[999px] bg-accent/15 border border-accent/25" />
 
@@ -289,6 +283,37 @@ export function Hero() {
                             className="relative h-full w-full object-contain object-bottom drop-shadow-2xl"
                         />
                     </div>
+
+                    {/* Internship Badge */}
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            x: -20,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            x: 0,
+                        }}
+                        transition={{
+                            duration: 0.6,
+                            delay: 0.8,
+                        }}
+                        className="absolute -bottom-6 -left-6 bg-surface p-5 rounded-2xl shadow-float border border-border flex items-center gap-4"
+                    >
+                        <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center text-accent font-serif text-2xl">
+                            6
+                        </div>
+
+                        <div>
+                            <p className="text-sm font-bold text-foreground">
+                                Months
+                            </p>
+
+                            <p className="text-xs text-subtle">
+                                UI/UX Internship
+                            </p>
+                        </div>
+                    </motion.div>
 
                     {/* Open to Work Badge */}
                     <motion.div
@@ -309,8 +334,8 @@ export function Hero() {
                         <Sparkles size={14} />
 
                         <span className="text-xs font-bold uppercase tracking-wider">
-                            Open to Work
-                        </span>
+              Open to Work
+            </span>
                     </motion.div>
                 </motion.div>
             </div>
