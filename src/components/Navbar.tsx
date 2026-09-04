@@ -156,7 +156,7 @@ export function Navbar() {
                 </a>
             )}
               <a
-              href="#cv.pdf"
+              href="/public/praween Imalsha (1).pdf"
               download
               className="mt-4 px-6 py-3 bg-accent text-background text-center font-semibold rounded-full hover:bg-accent-soft transition-colors flex items-center justify-center gap-2">
               
