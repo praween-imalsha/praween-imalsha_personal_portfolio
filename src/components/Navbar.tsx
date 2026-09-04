@@ -210,7 +210,7 @@ export function Navbar() {
                     {/* Resume */}
                     <a
                         href="/public/praween Imalsha (1).pdf"
-                        download="Praween-Imalsha-Resume.pdf"
+                        download="praween Imalsha (1).pdf"
                         className="
                             inline-flex
                             items-center
