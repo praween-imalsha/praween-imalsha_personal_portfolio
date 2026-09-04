@@ -23,8 +23,8 @@ const education = [
   },
   {
     degree: 'Advanced Level — Art Stream',
-    institute: 'Richmond College, Galle',
-    duration: '2018 — 2020',
+    institute: 'Narandeniya College, Kamburupitiya',
+    duration: '2023',
   },
 ];
 
@@ -54,7 +54,7 @@ export function Resume() {
         </FadeIn>
 
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-20">
-          {/* ==================== EXPERIENCE ==================== */}
+          {/* ================= EXPERIENCE ================= */}
           <div>
             <FadeIn className="flex items-center gap-3 mb-10">
               <div className="p-2.5 bg-accent/10 text-accent rounded-xl border border-border">
@@ -101,7 +101,6 @@ export function Resume() {
                           className="text-sm text-foreground/80 flex items-start gap-2"
                         >
                           <span className="text-accent mt-1.5 w-1 h-1 rounded-full bg-accent shrink-0" />
-
                           {desc}
                         </li>
                       ))}
@@ -112,9 +111,9 @@ export function Resume() {
             </div>
           </div>
 
-          {/* ==================== EDUCATION & CERTIFICATIONS ==================== */}
+          {/* ================= EDUCATION & CERTIFICATIONS ================= */}
           <div className="space-y-12">
-            {/* ==================== EDUCATION ==================== */}
+            {/* ================= EDUCATION ================= */}
             <div>
               <FadeIn className="flex items-center gap-3 mb-10">
                 <div className="p-2.5 bg-accent/10 text-accent rounded-xl border border-border">
@@ -149,7 +148,7 @@ export function Resume() {
               </div>
             </div>
 
-            {/* ==================== CERTIFICATIONS ==================== */}
+            {/* ================= CERTIFICATIONS ================= */}
             <div>
               <FadeIn className="flex items-center gap-3 mb-10">
                 <div className="p-2.5 bg-accent/10 text-accent rounded-xl border border-border">
