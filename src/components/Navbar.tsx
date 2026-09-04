@@ -111,15 +111,7 @@ export function Navbar() {
                 <a
                     href="#"
                     onClick={closeMobileMenu}
-                    className="
-                        text-xl
-                        font-serif
-                        font-bold
-                        tracking-tight
-                        text-foreground
-                        z-50
-                        relative
-                    "
+                 className="group flex items-center gap-2 px-6 py-3.5 bg-surface border border-border text-foreground rounded-full font-medium hover:border-accent hover:text-accent transition-colors duration-200"
                 >
                     Praween
                     <span className="text-accent">.</span>
